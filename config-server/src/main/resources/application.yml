@@ -1,4 +1,6 @@
-
+# in order to generate public-private key pair using ssh-keygen of NO SSH type then add extra parameter -m pem
+# without this param the key-pair generated will be of type openSSH, which is not required in most of Enterprise applications
+# ssh-keygen -t dsa -b 1024 -m pem
 server:
   port: 8888
   
